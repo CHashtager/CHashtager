@@ -1,16 +1,23 @@
-### Hi there 👋
+```csharp
+using System;
 
-<!--
-**CHashtager/CHashtager** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+public class CHashtager
+{
+    public string Name { get; set; } = "Omid";
+    public string Role { get; set; } = ".NET Developer, Software Engineer";
 
-Here are some ideas to get you started:
+    public void SayHi()
+    {
+        Console.WriteLine("Hello world, I debug life!");
+    }
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Program
+{
+    static void Main(string[] args)
+    {
+        var me = new CHashtager();
+        me.SayHi();
+    }
+}
+```
